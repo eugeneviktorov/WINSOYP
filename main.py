@@ -87,13 +87,13 @@ class MyFrame(ctk.CTkScrollableFrame):
         pointsChecked = ctk.BooleanVar()
 
         # Создаем флажки с помощью функции
-        createCheckbox(self, "Очистить кэш", cacheChecked, )
-        createCheckbox(self, "Очистить кэш NVIDIA", cacheNVIDIAChecked, )
-        createCheckbox(self, "Очистить кэш DNS", cacheDNSChecked, )
-        createCheckbox(self, "Очистить кэш Microsoft Store", storeChecked, )
-        createCheckbox(self, "Очистить файлы обновления Windows", downloadChecked, )
-        createCheckbox(self, "Очистить данные о запускаемых программах", prefetchChecked, )
-        createCheckbox(self, "Удалить точки восстановления (не рекомендуется)", pointsChecked,)
+        createCheckbox(self, "Кэш системы", cacheChecked, )
+        createCheckbox(self, "Кэш NVIDIA", cacheNVIDIAChecked, )
+        createCheckbox(self, "Кэш DNS", cacheDNSChecked, )
+        createCheckbox(self, "Кэш Microsoft Store", storeChecked, )
+        createCheckbox(self, "Файлы обновления Windows", downloadChecked, )
+        createCheckbox(self, "Данные о запускаемых программах", prefetchChecked, )
+        createCheckbox(self, "Точки восстановления (опытным пользователям)", pointsChecked,)
 
         # Создаем кнопку для подтверждения очистки
         clearButton = ctk.CTkButton(self, text="Очистить", command=clearAndConfirm)
